@@ -1,0 +1,82 @@
+.main
+	position: relative
+	padding-top: 57px
+	padding-bottom: 77px
+	background: $text-color-dark url(../img/main/bg.jpg) center no-repeat
+	color: $text-color-light
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.7)
+		z-index: 0	
+	&-img
+		position: relative
+		margin-top: 0px
+		margin-left: -107px
+		min-width: 100%
+		&::after
+	 	content: ''
+			position: absolute
+	 	width: 60px
+			height: 50px
+			margin-left: 98px
+			margin-top: -40px
+			background: transparent url(../img/main/rst.png) no-repeat
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 390px
+			height: 390px
+			top: 50%
+			margin-top: -173px
+			left: 50%
+			margin-left: -140px
+			border: 1px solid #ffffff
+			border-radius: 50%
+			background: transparent url(../img/main/rst.png)no-repeat
+	&-text
+		&__title
+			margin-top: 5px
+			font-family: "Roboto Bold"
+			font-size: 41px
+			margin-bottom: 8px
+			line-height: 42px
+		&__subtitle
+			font-family: "Roboto Regular"
+			font-size: 28px
+			padding-bottom: 14px
+  &__form
+  	background-color: rgba(#fff, 0.2)
+  	padding: 22px 27px
+.form
+ &-title
+		font-family: 'Roboto Light'
+  margin-bottom: 3px
+  padding-right: 0
+  font-size: 20px
+  font-weight: 300
+  line-height: 30px 	
+  &__important
+  	font-weight: 700
+  	text-transform: uppercase
+	 	margin-bottom: 15px
+ &__input
+ 	width: 311px
+ 	font-size: 14px
+ 	margin-right: 6px
+  padding: 13px 13px 13px 19px
+  border-radius: 4px
+  border: none
+  vertical-align: middle
+  flex-basis: 50%
+ &-small
+ 	font-size: 14px
+ 	font-weight: 300
+ 	margin-left: 19px
